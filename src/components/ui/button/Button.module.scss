@@ -1,0 +1,11 @@
+@import "../../../assets/scss/abstracts/variables";
+
+.button {
+  padding: 6px;
+  cursor: pointer;
+
+  &[disabled] {
+    background-color: $color-disabled;
+    cursor: not-allowed;
+  }
+}

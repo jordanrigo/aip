@@ -1,0 +1,41 @@
+@import "../../../../../assets/scss/abstracts/variables";
+
+$color-hover: #34ac9c;
+
+.nominee {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-mint;
+  padding: 1.5rem;
+
+  &.selected {
+    background-color: $color-dark-mint;
+  }
+
+  &:not(.selected):hover {
+    background-color: $color-hover;
+  }
+
+  .title {
+    margin-bottom: 2.5rem;
+  }
+
+  .image {
+    max-width: 100%;
+    object-fit: cover;
+    flex-grow: 1;
+  }
+
+  .selectButton {
+    margin-top: 2.5rem;
+    width: 15rem;
+    background-color: $color-mint;
+    color: $color-white;
+    border: 1px solid $color-white;
+
+    &:hover {
+      background-color: $color-hover;
+    }
+  }
+}

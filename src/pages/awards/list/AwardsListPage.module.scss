@@ -1,0 +1,27 @@
+@import "../../../assets/scss/abstracts/variables";
+@import "../../../assets/scss/abstracts/mixins";
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+
+  @include respond-below(md) {
+    justify-content: center;
+  }
+
+  .submitButton {
+    border: none;
+    padding: 3.2rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: $font-size-medium;
+
+    &:not([disabled]) {
+      background-color: $color-gold;
+    }
+
+    @include respond-below(md) {
+      width: 100%;
+    }
+  }
+}
