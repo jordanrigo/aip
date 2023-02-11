@@ -1,0 +1,23 @@
+///// COLORS
+$color-background: #0d2436;
+$color-white: #ffffff;
+$color-font-default: $color-white;
+$color-gold: #ffd700;
+$color-mint: #009b86;
+$color-dark-mint: #0a3a2a;
+$color-disabled: #ebebe4;
+$color-border: #888;
+
+/////FONT
+$font-size-medium: 1.3rem;
+$font-size-large: 2.8rem;
+
+// BREAKPOINTS
+$grid-breakpoints: (
+  xs: 480px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);

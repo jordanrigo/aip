@@ -1,0 +1,23 @@
+@import "../../../../../assets/scss/abstracts/mixins";
+$gap: 2.5rem;
+
+.categoryTitle {
+  background-color: #5a5a5a;
+  padding: 8px 8px 6px;
+  margin-bottom: $gap;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: $gap;
+  margin-bottom: $gap;
+
+  @include respond-below(lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include respond-below(sm) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
